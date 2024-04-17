@@ -20,6 +20,7 @@ def check_plagiarism():
     global s_vectors
     for student_a, text_vector_a in s_vectors:
         new_vectors = s_vectors.copy()
+        a = 2
         current_index = new_vectors.index((student_a, text_vector_a))
         del new_vectors[current_index]
         for student_b, text_vector_b in new_vectors:
