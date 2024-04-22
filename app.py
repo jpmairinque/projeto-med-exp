@@ -19,8 +19,9 @@ plagiarism_results = set()
 def check_plagiarism():
     global s_vectors
     for student_a, text_vector_a in s_vectors:
+        
         new_vectors = s_vectors.copy()
-        a = 2
+        a = 2 + 3
         current_index = new_vectors.index((student_a, text_vector_a))
         del new_vectors[current_index]
        
